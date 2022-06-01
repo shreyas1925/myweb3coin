@@ -15,7 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const Myweb3coin = await hre.ethers.getContractFactory("Myweb3coin");
-  const myweb3coin = await Myweb3coin.deploy("Hello, Hardhat!");
+  const myweb3coin = await Myweb3coin.deploy();
 
   await myweb3coin.deployed();
 
